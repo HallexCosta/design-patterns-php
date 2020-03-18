@@ -2,6 +2,8 @@
 
 namespace PHP\DesignPatterns\Interfaces\Observer;
 
+use PHP\DesignPatterns\Subject;
+
 /**
  * class ObserverInterface
  */
