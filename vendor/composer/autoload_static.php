@@ -9,16 +9,11 @@ class ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
-            'PHP\\DesignPatterns\\Examples\\' => 28,
             'PHP\\DesignPatterns\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PHP\\DesignPatterns\\Examples\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/app/examples',
-        ),
         'PHP\\DesignPatterns\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/design_patterns',
@@ -26,10 +21,10 @@ class ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492
     );
 
     public static $classMap = array (
-        'PHP\\DesignPatterns\\Examples\\Observer\\MyObserver' => __DIR__ . '/../..' . '/src/app/examples/observer/MyObserver.php',
-        'PHP\\DesignPatterns\\Examples\\Observer\\MySubject' => __DIR__ . '/../..' . '/src/app/examples/observer/MySubject.php',
-        'PHP\\DesignPatterns\\Observer' => __DIR__ . '/../..' . '/src/design_patterns/observer/Observer.php',
-        'PHP\\DesignPatterns\\Subject' => __DIR__ . '/../..' . '/src/design_patterns/observer/Subject.php',
+        'PHP\\DesignPatterns\\Interfaces\\Observer\\ObserverInterface' => __DIR__ . '/../..' . '/src/design_patterns/interfaces/observer/ObserverInterface.php',
+        'PHP\\DesignPatterns\\Interfaces\\Observer\\SubjectInterface' => __DIR__ . '/../..' . '/src/design_patterns/interfaces/observer/SubjectInterface.php',
+        'PHP\\DesignPatterns\\Observer\\Observer' => __DIR__ . '/../..' . '/src/design_patterns/observer/Observer.php',
+        'PHP\\DesignPatterns\\Observer\\Subject' => __DIR__ . '/../..' . '/src/design_patterns/observer/Subject.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -1,14 +1,14 @@
 <?php
 
-namespace PHP\DesignPatterns;
+namespace PHP\DesignPatterns\Observer;
 
-use PHP\DesignPatterns\Interfaces\Observer\SubjectInterface;
-use PHP\DesignPatterns\Observer;
+use SplObserver;
+use SplSubject;
 
 /**
  * class Subject
  */
-abstract class Subject implements SubjectInterface
+abstract class Subject implements SplSubject
 {
     /**
      * [$_observers description]
@@ -18,24 +18,26 @@ abstract class Subject implements SubjectInterface
     /**
      * [attach description]
      * @param  SplObserver $observer [description]
-     * @return void                  [description]
+     * @return SplSubject            [description]
      */
-    public function attach(Observer $observer) : void
+    public function attach(SplObserver $observer) : SplSubject
     {
         $id = spl_object_hash($observer);
         $this->_observers[$id] = $observer;
+        return $this;
     }
     /**
      * [detach description]
      * @param  SplObserver $observer [description]
-     * @return void                  [description]
+     * @return SplSubject            [description]
      */
-    public function detach(Observer $observer) : void
+    public function detach(SplObserver $observer) : SplSubject
     {
         $id = spl_object_hash($observer);
         if (isset($this->_observers[$id])) {
             unset($this->_observers[$id]);
         }
+        return $this;
     }
     /**
      * [notify description]

@@ -6,8 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PHP\\DesignPatterns\\Examples\\Observer\\MyObserver' => $baseDir . '/src/app/examples/observer/MyObserver.php',
-    'PHP\\DesignPatterns\\Examples\\Observer\\MySubject' => $baseDir . '/src/app/examples/observer/MySubject.php',
-    'PHP\\DesignPatterns\\Observer' => $baseDir . '/src/design_patterns/observer/Observer.php',
-    'PHP\\DesignPatterns\\Subject' => $baseDir . '/src/design_patterns/observer/Subject.php',
+    'PHP\\DesignPatterns\\Interfaces\\Observer\\ObserverInterface' => $baseDir . '/src/design_patterns/interfaces/observer/ObserverInterface.php',
+    'PHP\\DesignPatterns\\Interfaces\\Observer\\SubjectInterface' => $baseDir . '/src/design_patterns/interfaces/observer/SubjectInterface.php',
+    'PHP\\DesignPatterns\\Observer\\Observer' => $baseDir . '/src/design_patterns/observer/Observer.php',
+    'PHP\\DesignPatterns\\Observer\\Subject' => $baseDir . '/src/design_patterns/observer/Subject.php',
 );

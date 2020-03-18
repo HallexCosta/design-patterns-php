@@ -1,21 +1,21 @@
 <?php
 
-namespace PHP\DesignPatterns;
+namespace PHP\DesignPatterns\Observer;
 
-use PHP\DesignPatterns\Interfaces\Observer\ObserverInterface;
-use PHP\DesignPatterns\Subject;
+use SplObserver;
+use SplSubject;
 
 /**
  * class Observer
  */
-abstract class Observer implements ObserverInterface
+abstract class Observer implements SplObserver
 {
     /**
      * [update description]
      * @param  SplSubject $subject [description]
      * @return void                [description]
      */
-    public function update(Subject $subject) : void
+    public function update(SplSubject $subject) : void
     {
     	echo __CLASS__ . PHP_EOL;
     }
