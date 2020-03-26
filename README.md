@@ -25,6 +25,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 	* [Debug](#debug-observer)
 * [Factory](#factory)
 
+#TEstanso a coisa toda
 
 [](#debug-observer)
 [Return to Map](#map)
