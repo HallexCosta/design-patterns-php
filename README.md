@@ -33,7 +33,7 @@ $subject = new class extends Subject {
 //Create your Observer or Subject
 final class MyObserver extends Observer
 {
-    //Poliform Method Update
+	//Poliform Method Update
 	public function update(SplSubject $subject) : void
 	{
 		echo 'Poliform' . PHP_EOL;
