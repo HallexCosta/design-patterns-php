@@ -21,7 +21,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 ## Map
 
 * [Observer](#observer)
-	* [Debug](#debug)
+	* [Debug](#debug-observer)
 * [Factory](#factory)
 
 ## Code
@@ -74,7 +74,7 @@ $subject
 
 ```
 
-[](#debug)
+[](#debug-observer)
 #### Debug:
 ```php
 //Debug Varible "$subject"
