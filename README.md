@@ -9,7 +9,10 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
-<a href="#observer">Observer ✅</a>
+<ul>
+	<li><a href="#observer">Observer ✅</a></li>
+	<ul><li><a href="#debug-observer">Debug</a></li></ul>
+</ul>
 
 <a href="#factory">Factory  ❌</a>
 
@@ -64,8 +67,12 @@ $subject
 	->detach($observer)
 	->notify();
 
+```
+
+<p id="debug-observer"></p>
 
 Debug:
+```php
 //Debug Varible "$subject"
 class class@anonymous#3 (1) {
   protected array $_observers =>
@@ -85,7 +92,6 @@ class MySubject#4 (1) {
     }
   }
 }
-
 ```
 
 ## Contributor
