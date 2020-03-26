@@ -9,15 +9,14 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
-(Observer)[#observer]
 <a href="#observer">Observer ✅</a>
 
-Factory  ❌
+<a href="#factory">Factory  ❌</a>
 
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
-<label id="observer"></label>
+<p id="observer"></p>
 #### Observer
 ```php
 <?php
