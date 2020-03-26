@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/55293671/77607982-b7a2ca80-6efa-11ea-9c59-d82fba2e34d6.png" width="550">
+    <img src="https://user-images.githubusercontent.com/55293671/77607982-b7a2ca80-6efa-11ea-9c59-d82fba2e34d6.png" width="250" alt="octocat-hallex">
 </p>
 
 ## Description
