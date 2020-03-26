@@ -9,6 +9,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
+(Observer)[#observer]
 <a href="#observer">Observer ✅</a>
 
 Factory  ❌
@@ -16,7 +17,8 @@ Factory  ❌
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
-<h4 id="observer">Observer</h4>
+<label id="observer"></label>
+#### Observer
 ```php
 <?php
 //Configure your autoload directory
