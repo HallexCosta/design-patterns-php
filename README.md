@@ -15,8 +15,11 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
 ## Mapping
 * Observer
-** Debug
+* Debug
 * Factory
+
+[observer](#observer)
+
 <ul>
 	<li><a href="#observer">Observer</a></li>
 	<ul><li><a href="#debug-observer">Debug</a></li></ul>
