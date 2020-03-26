@@ -1,5 +1,5 @@
 {
-    "name": "hallex/design_patterns",
+    "name": "hallex/design-patterns",
     "description": "Import design patterns in your project with PHP Design Patterns",
     "type": "library",
     "autoload": {
