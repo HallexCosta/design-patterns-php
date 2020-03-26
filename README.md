@@ -25,7 +25,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 * [Factory](#factory)
 
 ## Code
-[](#observer)
+[](#debug-observer)
 #### Observer
 ```php
 <?php
