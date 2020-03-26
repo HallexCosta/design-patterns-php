@@ -2,11 +2,12 @@
 
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
-use PHP\DesignPatterns\Interfaces\Observer\SubjectInterface;
 use PHP\DesignPatterns\Observer\Observer;
 use PHP\DesignPatterns\Observer\Subject;
 
-final class TestObserver extends Observer
+//Create your Observer or Subject
+
+final class MyObserver extends Observer
 {
     //Poliform Method Update
 	public function update(SplSubject $subject) : void
@@ -16,34 +17,37 @@ final class TestObserver extends Observer
 	}
 }
 
-//Object Inheritance
-final class TestSubject extends Subject
+final class MySubject extends Subject
 {
 }
 
-//Objects Tests Subject and Observer (It's not a test Unit)
-$testSubject = new TestSubject;
-$testObserver = new TestObserver;
-
 //Object Inheritance (Anonymous Class)
-
-//Object Inheritance
 $subject = new class extends Subject {
 };
 $observer = new class extends Observer {
 };
 
+//My Objects Subject and Observer
+$mySubject = new MySubject;
+$myObserver = new MyObserver;
+
 //Callback normal
-$subject->attach($observer);
-$subject->attach($testObserver);
+$mySubject->attach($observer);
+$mySubject->attach($myObserver);
+$mySubject->detach($myObserver);
+$mySubject->notify();
 
 //Fluency Interface
-$testSubject->attach($observer)->attach($testObserver);
+$subject
+->attach($observer)
+->attach($myObserver)
+->detach($observer)
+->notify();
 
 //Notify All Observer
 $subject->notify();
-$testSubject->notify();
+$mySubject->notify();
 
 //Debug of Subjects
 var_dump($subject);
-var_dump($testSubject);
+var_dump($mySubject);

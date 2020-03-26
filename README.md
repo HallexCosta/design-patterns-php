@@ -17,36 +17,70 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### Observer
 ```php
 <?php
+//Configure your autoload directory
+require_once __DIR__ . '/vendor/autoload.php'
 
+//Import class Observer and Subject
+use PHP\DesignPatterns\Observer\Observer;
+use PHP\DesignPatterns\Observer\Subject;
+
+//Object Inheritance (Anonymous Class)
 $observer = new class extends Observer {
 };
 $subject = new class extends Subject {
 };
 
-OR
+//Create your Observer or Subject
+final class MyObserver extends Observer
+{
+    //Poliform Method Update
+	public function update(SplSubject $subject) : void
+	{
+		echo 'Poliform' . PHP_EOL;
+		parent::update($subject);
+	}
+}
 
-class MyObserver extends Observer {}
-class MySubject extends Subject {}
+final class MySubject extends Subject {}
 
-Examples of use:
-
+//My Objects Subject and Observer
 $mySubject = new MySubject;
 $myObserver = new MySubject;
 
+//Callback normal
 $mySubject->attach($observer);
 $mySubject->attach($myObserver);
 $mySubject->detach($myObserver);
 $mySubject->notify();
 
-OR
-
+//Fluency Interface
 $subject
 	->attach($observer)
 	->attach($myObserver)
 	->detach($observer)
 	->notify();
 
+
 Debug:
+//Debug Varible "$subject"
+class class@anonymous#3 (1) {
+  protected array $_observers =>
+  array(1) {
+    '0000000030ce39d5000000000864895a' =>
+    class MyObserver#5 (0) {
+    }
+  }
+}
+
+//Debug Varible "$mySubject"
+class MySubject#4 (1) {
+  protected array $_observers =>
+  array(1) {
+    '000000000604545100000000268c42c2' =>
+    class class@anonymous#2 (0) {
+    }
+  }
+}
 
 ```
 
@@ -57,7 +91,7 @@ Debug:
 	"age": 17,
 	"role": "Developer",
 	"startDate": "18/03/2020",
-	"currentDate": "26/03/2020"
+	"latestUpdate": "26/03/2020 01:12"
 }
 ```
 
