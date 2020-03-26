@@ -9,7 +9,8 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
-
+| # | DesignPatterns | Added
+---------------------------
 | 1 | Observer | ✅ |
 | 2 | Factory  | ❌ |
 
