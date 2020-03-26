@@ -7,9 +7,12 @@
             "PHP\\DesignPatterns\\": "src/design_patterns/"
         }
     },
+<<<<<<< HEAD
     "require": {
         "php": "^7.4"
     },
+=======
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
     "homepage": "http://hallex.zapto.org",
     "license": "MIT",
     "authors": [

@@ -20,11 +20,25 @@ class ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492
         ),
     );
 
+<<<<<<< HEAD
+=======
+    public static $classMap = array (
+        'PHP\\DesignPatterns\\Interfaces\\Observer\\ObserverInterface' => __DIR__ . '/../..' . '/src/design_patterns/interfaces/observer/ObserverInterface.php',
+        'PHP\\DesignPatterns\\Interfaces\\Observer\\SubjectInterface' => __DIR__ . '/../..' . '/src/design_patterns/interfaces/observer/SubjectInterface.php',
+        'PHP\\DesignPatterns\\Observer\\Observer' => __DIR__ . '/../..' . '/src/design_patterns/observer/Observer.php',
+        'PHP\\DesignPatterns\\Observer\\Subject' => __DIR__ . '/../..' . '/src/design_patterns/observer/Subject.php',
+    );
+
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492::$prefixDirsPsr4;
+<<<<<<< HEAD
+=======
+            $loader->classMap = ComposerStaticInite6d850f7bdfa0218bb7f4d105299e492::$classMap;
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 
         }, null, ClassLoader::class);
     }

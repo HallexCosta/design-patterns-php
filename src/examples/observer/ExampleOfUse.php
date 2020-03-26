@@ -2,6 +2,10 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+<<<<<<< HEAD
+=======
+use PHP\DesignPatterns\Interfaces\Observer\SubjectInterface;
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 use PHP\DesignPatterns\Observer\Observer;
 use PHP\DesignPatterns\Observer\Subject;
 
@@ -14,7 +18,11 @@ final class TestObserver extends Observer
 		parent::update($subject);
 	}
 }
+<<<<<<< HEAD
 //Object Inheritance
+=======
+//
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 final class TestSubject extends Subject
 {
 }
@@ -23,7 +31,11 @@ final class TestSubject extends Subject
 $testSubject = new TestSubject;
 $testObserver = new TestObserver;
 
+<<<<<<< HEAD
 //Object Inheritance (Anonymous Class)
+=======
+//Object Inheritance
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 $subject = new class extends Subject {
 };
 $observer = new class extends Observer {

@@ -1,4 +1,8 @@
 # Design Patterns
+<<<<<<< HEAD
+=======
+
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 ## Description
 Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
@@ -8,6 +12,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 ## Design Patterns Added
 #### Observer ✅
 #### Factory  ❌
+<<<<<<< HEAD
 
 ## How to Use
 ##### Link: hallex.zapto.org/desgin-patterns-php (coming soon)
@@ -52,3 +57,5 @@ $subject
 ## Attention
 ##### Website (hallex.zapto.org) it's Offline ❌
 
+=======
+>>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
