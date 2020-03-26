@@ -48,9 +48,11 @@ $subject
 ```
 
 ## Contributor
-#### name: Hállex da Silva Costa
-#### age:  17
-#### role: Developer
+{
+	"name": "Hállex da Silva Costa",
+	"age": 17,
+	"role": "Developer"
+}
 
 ## Attention
 ##### Website (hallex.zapto.org) it's Offline ❌
