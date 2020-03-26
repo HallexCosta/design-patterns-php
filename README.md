@@ -18,7 +18,8 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 * Debug
 * Factory
 
-[observer](#observer)
+* [Observer](#observer)
+	* [Debug](#debug-observer)
 
 <ul>
 	<li><a href="#observer">Observer</a></li>
