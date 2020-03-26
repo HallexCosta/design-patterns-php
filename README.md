@@ -9,12 +9,18 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
+
+Observer ✅
+
+Factory  ❌
+
+## Mapping
 <ul>
-	<li><a href="#observer">Observer</a>✅</li>
+	<li><a href="#observer">Observer</a></li>
 	<ul><li><a href="#debug-observer">Debug</a></li></ul>
 </ul>
 
-<a href="#factory">Factory  ❌</a>
+<a href="#factory">Factory</a>
 
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
