@@ -45,7 +45,7 @@ final class MySubject extends Subject {}
 
 //My Objects Subject and Observer
 $mySubject = new MySubject;
-$myObserver = new MySubject;
+$myObserver = new MyObserver;
 
 //Callback normal
 $mySubject->attach($observer);
