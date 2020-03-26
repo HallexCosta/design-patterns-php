@@ -1,31 +1,43 @@
 # Design Patterns
 
+--------------------------------------------------------------------------------
+
 <img src="https://user-images.githubusercontent.com/55293671/77607982-b7a2ca80-6efa-11ea-9c59-d82fba2e34d6.png" width="300" alt="octocat-hallex">
+
+--------------------------------------------------------------------------------
 
 ## Description
 Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
+--------------------------------------------------------------------------------
+
 ## Tested PHP Version
 #### PHP => 7.4
+
+--------------------------------------------------------------------------------
 
 ## Design Patterns Added
 
 |	 	# 		|	Design Patterns |	  Added		|
 | ------------- | ----------------- | ------------- |
-| 	  **1**		| 		Observer  	| 		✅		|
-| 	  **2**		| 		Factory  	| 		❌		|
+| 	  **1**		| 		Observer  	|		✅		|
+| 	  **2**		| 		Factory  	|		❌		|
 
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
+--------------------------------------------------------------------------------
+
 ## Map
 
 * [Observer](#observer)
-* [Debug](#debug-observer)
+	* [Debug](#debug-observer)
 * [Factory](#factory)
 
+--------------------------------------------------------------------------------
+
 ## Code
-[](#debug-observer)
+[](#observer)
 #### Observer
 ```php
 <?php
@@ -97,6 +109,7 @@ class MySubject#4 (1) {
   }
 }
 ```
+--------------------------------------------------------------------------------
 
 ## Contributor
 ```json
