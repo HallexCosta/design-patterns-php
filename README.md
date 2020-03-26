@@ -17,6 +17,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
 <p id="observer"></p>
+
 #### Observer
 ```php
 <?php
