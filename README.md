@@ -1,5 +1,7 @@
 # Design Patterns
 
+![](octocat-hallex.png)
+
 ## Description
 Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
@@ -7,8 +9,8 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
-#### Observer ✅
-#### Factory  ❌
+#### - [x] Observer ✅
+#### - [ ] Factory  ❌
 
 ## How to Use
 ##### Link: hallex.zapto.org/desgin-patterns-php (coming soon)
