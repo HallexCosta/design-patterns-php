@@ -26,7 +26,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
 <p id="observer"></p>
 
-#### Observer
+#### Observer (#observer)
 ```php
 <?php
 //Configure your autoload directory
