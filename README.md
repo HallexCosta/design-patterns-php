@@ -10,10 +10,10 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
 ## Design Patterns Added
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| #  | Design Patterns | Added |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  |
 
 
 | # | DesignPatterns | Added
