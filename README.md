@@ -48,11 +48,15 @@ $subject
 ```
 
 ## Contributor
+```json
 {
 	"name": "Hállex da Silva Costa",
 	"age": 17,
-	"role": "Developer"
+	"role": "Developer",
+	"startDate": "18/03/2020",
+	"currentDate": "26/03/2020"
 }
+```
 
 ## Attention
 ##### Website (hallex.zapto.org) it's Offline ❌
