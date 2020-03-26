@@ -46,7 +46,7 @@ $subject
 ```
 
 ## Contributor
-#### name: Hállex da S. Costa
+#### name: Hállex da Silva Costa
 #### age:  17
 #### role: Developer
 
