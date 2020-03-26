@@ -18,17 +18,13 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
-[](#map)
 ## Map
 
 * [Observer](#observer)
 	* [Debug](#debug-observer)
 * [Factory](#factory)
 
-#TEstanso a coisa toda
-
-[](#debug-observer)
-[Return to Map](#map)
+[](#observer)
 #### Observer
 ```php
 <?php
@@ -77,8 +73,7 @@ $subject
 
 ```
 
-[Return to Map](#map)
-[](#observer)
+[](#debug-observer)
 #### Debug:
 ```php
 //Debug Varible "$subject"
