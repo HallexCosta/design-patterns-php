@@ -45,6 +45,9 @@ $subject
 	->attach($myObserver)
 	->detach($observer)
 	->notify();
+
+Debug:
+
 ```
 
 ## Contributor
