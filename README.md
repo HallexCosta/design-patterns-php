@@ -10,7 +10,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
 ## Design Patterns Added
 <ul>
-	<li><a href="#observer">Observer ✅</a></li>
+	<li><a href="#observer">Observer</a>✅</li>
 	<ul><li><a href="#debug-observer">Debug</a></li></ul>
 </ul>
 
@@ -71,7 +71,7 @@ $subject
 
 <p id="debug-observer"></p>
 
-Debug:
+#### Debug:
 ```php
 //Debug Varible "$subject"
 class class@anonymous#3 (1) {
