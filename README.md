@@ -75,9 +75,8 @@ $subject
 
 ```
 
-[](#debug-observer)
-
 [Return to Map](#map)
+[](#debug-observer)
 #### Debug:
 ```php
 //Debug Varible "$subject"
