@@ -9,12 +9,13 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### PHP => 7.4
 
 ## Design Patterns Added
-Observer ✅
+[^1]Observer ✅
 
 Factory  ❌
 
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
+[^1]:
 #### Observer
 ```php
 <?php
