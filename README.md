@@ -15,17 +15,17 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 | 	  **1**		| 		Observer  	| 		✅		|
 | 	  **2**		| 		Factory  	| 		❌		|
 
-## Mapping
+## How to Use
+##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
+
+[](#map)
+## Map
 
 * [Observer](#observer)
 	* [Debug](#debug-observer)
 * [Factory](#factory)
 
-## How to Use
-##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
-
-
-[](#observer)
+[Return to Map](#map)
 #### Observer
 ```php
 <?php
@@ -74,8 +74,7 @@ $subject
 
 ```
 
-<p id="debug-observer"></p>
-
+[Return to Map](#map)
 #### Debug:
 ```php
 //Debug Varible "$subject"
