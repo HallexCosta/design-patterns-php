@@ -10,9 +10,8 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
 ## Design Patterns Added
 
-Observer ✅
-
-Factory  ❌
+1. Observer ✅
+2. Factory  ❌
 
 ## Mapping
 <ul>
