@@ -9,7 +9,6 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 ## Design Patterns Added
 #### Observer ✅
 #### Factory  ❌
-<<<<<<< HEAD
 
 ## How to Use
 ##### Link: hallex.zapto.org/desgin-patterns-php (coming soon)
