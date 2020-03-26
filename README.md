@@ -1,8 +1,5 @@
 # Design Patterns
-<<<<<<< HEAD
-=======
 
->>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
 ## Description
 Repository of Design Patterns for PHP (Recommended PHP 7.4)
 
@@ -56,6 +53,3 @@ $subject
 
 ## Attention
 ##### Website (hallex.zapto.org) it's Offline ❌
-
-=======
->>>>>>> d8d96efd301201f18fd8d854f5cbac3b6dea6008
