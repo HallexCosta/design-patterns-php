@@ -13,7 +13,7 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 - [ ] Factory  ❌
 
 ## How to Use
-##### Link: hallex.zapto.org/desgin-patterns-php (coming soon)
+##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 #### Observer
 ```php
 <?php
@@ -59,4 +59,4 @@ $subject
 ```
 
 ## Attention
-##### Website (hallex.zapto.org) it's Offline ❌
+##### [Website Hallex](http://hallex.zapto.org/) it's Offline ❌
