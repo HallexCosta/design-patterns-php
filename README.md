@@ -14,19 +14,10 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 2. Factory  ❌
 
 ## Mapping
-* Observer
-* Debug
-* Factory
 
 * [Observer](#observer)
 	* [Debug](#debug-observer)
-
-<ul>
-	<li><a href="#observer">Observer</a></li>
-	<ul><li><a href="#debug-observer">Debug</a></li></ul>
-</ul>
-
-<a href="#factory">Factory</a>
+* [Factory](#factory)
 
 ## How to Use
 ##### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
