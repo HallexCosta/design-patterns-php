@@ -1,22 +1,29 @@
 {
     "name": "hallex/design-patterns",
     "description": "Import design patterns in your project with PHP Design Patterns",
+    "minimum-stability": "stable",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "PHP\\DesignPatterns\\": "src/design_patterns/"
-        }
-    },
-    "require": {
-        "php": "^7.4"
-    },
-    "homepage": "http://hallex.zapto.org",
     "license": "MIT",
+    "homepage": "http://hallex.zapto.org",
     "authors": [
         {
             "name": "HallexCosta",
             "email": "hallex.costa@hotmail.com",
             "role": "Developer"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "src/App/DesignPatterns/"
+        }
+    },
+    "autoload-dev": {
+
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+
+    }
 }

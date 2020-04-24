@@ -1,36 +1,6 @@
-# Design Patterns
-
-<img src="https://user-images.githubusercontent.com/55293671/77607982-b7a2ca80-6efa-11ea-9c59-d82fba2e34d6.png" width="300" alt="octocat-hallex">
-
-## Description
-Repository of Design Patterns for PHP (Recommended PHP 7.4)
-
-## Tested PHP Version
-#### PHP => 7.4
-
-## Design Patterns Added
-
-|	 	# 		|	Design Patterns |	  Added		|
-| ------------- | ----------------- | ------------- |
-| 	  **1**		| 		Observer  	|		✅		|
-| 	  **2**		| 		Factory  	|		❌		|
-
-## How to Use
-#### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
-
-## Map
-
-* [Observer](#observer)
-	* [Debug](#debug_observer)
-* [Factory](#factory)
-
-## Code
-[](#observer)
-#### Observer
-```php
 <?php
-//Configure your autoload directory
-require_once __DIR__ . '/vendor/autoload.php'
+
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 use DesignPatterns\Observer\Subject;
 use DesignPatterns\Observer\Observer;
@@ -107,45 +77,3 @@ $mySubject->notify();
 //Debug of Subjects
 var_dump($subject);
 var_dump($mySubject);
-
-
-```
-
-[](#debug_observer)
-#### Debug:
-```php
-//Debug Varible "$subject"
-class class@anonymous#3 (1) {
-  protected array $_observers =>
-  array(1) {
-    '0000000030ce39d5000000000864895a' =>
-    class MyObserver#5 (0) {
-    }
-  }
-}
-
-//Debug Varible "$mySubject"
-class MySubject#4 (1) {
-  protected array $_observers =>
-  array(1) {
-    '000000000604545100000000268c42c2' =>
-    class class@anonymous#2 (0) {
-    }
-  }
-}
-```
---------------------------------------------------------------------------------
-
-## Contributor
-```json
-{
-	"name": "Hállex da Silva Costa",
-	"age": 17,
-	"role": "Developer",
-	"startDate": "18/03/2020",
-	"latestUpdate": "26/03/2020 02:51"
-}
-```
-
-## Attention
-##### [Website Hallex](http://hallex.zapto.org/) it's Offline ❌
