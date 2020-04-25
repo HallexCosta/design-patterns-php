@@ -1,3 +1,4 @@
+
 # Design Patterns
 
 <img src="https://user-images.githubusercontent.com/55293671/77607982-b7a2ca80-6efa-11ea-9c59-d82fba2e34d6.png" width="300" alt="octocat-hallex">
@@ -20,13 +21,18 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 #### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
 ## Guide
-*
+* [Install](#install)
+* [DesignPatterns](#design-patterns)
+	* [Observer](#observer)
+	* [Singleton](#singleton)
+	* [Factory](#factory)
 
-* [Observer](#observer)
-	* [Debug](#debug_observer)
-* [Factory](#factory)
+[](#install)
+## Install
+> **composer require hallex/design-patterns ^1.0**
 
-## Code
+[](#design-patterns)
+## Design Patterns
 [](#observer)
 #### Observer
 ```php
@@ -109,7 +115,7 @@ var_dump($mySubject);
 
 ```
 
-[](#debug_observer)
+[](#debug-observer)
 #### Debug:
 ```php
 //Debug Varible "$subject"
@@ -138,8 +144,7 @@ object(MySubject)[5]
 	"name": "Hállex da Silva Costa",
 	"age": 17,
 	"role": "Developer",
-	"startDate": "18/03/2020",
-	"latestUpdate": "26/03/2020 02:51"
+	"startDate": "18/03/2020"
 }
 ```
 
