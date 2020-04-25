@@ -2,6 +2,7 @@
 
 namespace DesignPatterns\Observer;
 
+use SplObjectStorage;
 use SplObserver;
 use SplSubject;
 
@@ -11,9 +12,16 @@ use SplSubject;
 trait Subject
 {
     /**
-     * @var array $observers
+     * @var SplObjectStorage $observers
      */
-    private array $observers = [];
+    private SplObjectStorage $observers;
+    /**
+     * __construct
+     */
+    final public function __construct()
+    {
+        $this->observers = new SplObjectStorage;
+    }
     /**
      * attach
      * @param  SplObserver $observer
@@ -22,7 +30,7 @@ trait Subject
     public function attach(SplObserver $observer) : SplSubject
     {
         $id = spl_object_hash($observer);
-        $this->observers[$id] = $observer;
+        $this->observers->attach($observer, $id);
         return $this;
     }
     /**
@@ -32,10 +40,7 @@ trait Subject
      */
     public function detach(SplObserver $observer) : SplSubject
     {
-        $id = spl_object_hash($observer);
-        if (isset($this->observers[$id])) {
-            unset($this->observers[$id]);
-        }
+        $this->observers->detach($observer);
         return $this;
     }
     /**
@@ -44,8 +49,7 @@ trait Subject
      */
     public function notify() : void
     {
-        $observers = $this->observers;
-        foreach ($observers as $observer) {
+        foreach ($this->observers as $observer) {
             $observer->update($this);
         }
     }

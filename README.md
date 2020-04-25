@@ -13,12 +13,14 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 |	 	# 		|	Design Patterns |	  Added		|
 | ------------- | ----------------- | ------------- |
 | 	  **1**		| 		Observer  	|		✅		|
-| 	  **2**		| 		Factory  	|		❌		|
+| 	  **2**		| 		Singleton  	|		❌		|
+| 	  **3**		| 		Factory  	|		❌		|
 
 ## How to Use
 #### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
-## Map
+## Guide
+*
 
 * [Observer](#observer)
 	* [Debug](#debug_observer)
@@ -35,7 +37,7 @@ require_once __DIR__ . '/vendor/autoload.php'
 use DesignPatterns\Observer\Subject;
 use DesignPatterns\Observer\Observer;
 
-//Create your Observer or Subject
+//Overwrite Methods Observer
 final class MyObserver implements SplObserver
 {
 	//Import Observer
@@ -47,38 +49,37 @@ final class MyObserver implements SplObserver
 	}
 }
 
+//Overwrite Methods Observer
 final class MySubject implements SplSubject
 {
 	//Import Subject
 	use Subject;
-	//Poliform Method Attach
+
 	final public function attach(SplObserver $observer) : SplSubject
 	{
-		$id = spl_object_hash($observer);
-		$this->observers[$id] = $observer;
+		$this->observers->attach($observer);
 		return $this;
 	}
-	//Poliform Method Detach
+
 	final public function detach(SplObserver $observer) : SplSubject
 	{
-		$id = spl_object_hash($observer);
-		unset($this->observers[$id]);
+		$this->observers->detach($observer);
 		return $this;
 	}
-	//Poliform Method Notify
-	final public function notify() : SplSubject
+
+	final public function notify() : void
 	{
 		foreach ($this->observers as $observer) {
 			$observer->update($this);
 		}
-		return $this;
 	}
 }
 
-//Object Inheritance (Anonymous Class)
+//Import Subject Methods in your class
 $subject = new class implements SplSubject {
 	use Subject;
 };
+//Import Observers Methods in your class
 $observer = new class implements SplObserver {
 	use Observer;
 };
@@ -91,14 +92,12 @@ $myObserver = new MyObserver;
 $mySubject->attach($observer);
 $mySubject->attach($myObserver);
 $mySubject->detach($myObserver);
-$mySubject->notify();
 
 //Fluency Interface
 $subject
-->attach($observer)
-->attach($myObserver)
-->detach($observer)
-->notify();
+	->attach($observer)
+	->attach($myObserver)
+	->detach($observer);
 
 //Notify All Observer
 $subject->notify();
@@ -108,31 +107,28 @@ $mySubject->notify();
 var_dump($subject);
 var_dump($mySubject);
 
-
 ```
 
 [](#debug_observer)
 #### Debug:
 ```php
 //Debug Varible "$subject"
-class class@anonymous#3 (1) {
-  protected array $_observers =>
-  array(1) {
-    '0000000030ce39d5000000000864895a' =>
-    class MyObserver#5 (0) {
-    }
-  }
-}
+object(class@anonymous)[3]
+  private SplObjectStorage 'observers' =>
+    object(SplObjectStorage)[2]
+      private 'storage' =>
+        array (size=1)
+          '000000002b33b19f0000000058b0c727' =>
+            array (size=2)
 
 //Debug Varible "$mySubject"
-class MySubject#4 (1) {
-  protected array $_observers =>
-  array(1) {
-    '000000000604545100000000268c42c2' =>
-    class class@anonymous#2 (0) {
-    }
-  }
-}
+object(MySubject)[5]
+  private SplObjectStorage 'observers' =>
+    object(SplObjectStorage)[6]
+      private 'storage' =>
+        array (size=1)
+          '000000002b33b19c0000000058b0c727' =>
+            array (size=2)
 ```
 --------------------------------------------------------------------------------
 

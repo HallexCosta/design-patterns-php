@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 use DesignPatterns\Observer\Subject;
 use DesignPatterns\Observer\Observer;
 
-//Create your Observer or Subject
+//Overwrite Methods Observer
 final class MyObserver implements SplObserver
 {
 	//Import Observer
@@ -17,38 +17,42 @@ final class MyObserver implements SplObserver
 	}
 }
 
+//Overwrite Methods Observer
 final class MySubject implements SplSubject
 {
 	//Import Subject
 	use Subject;
-	//Poliform Method Attach
+
 	final public function attach(SplObserver $observer) : SplSubject
 	{
-		$id = spl_object_hash($observer);
-		$this->observers[$id] = $observer;
+		$this->observers->attach($observer);
 		return $this;
 	}
-	//Poliform Method Detach
+
 	final public function detach(SplObserver $observer) : SplSubject
 	{
-		$id = spl_object_hash($observer);
-		unset($this->observers[$id]);
+		$this->observers->detach($observer);
 		return $this;
 	}
-	//Poliform Method Notify
-	final public function notify() : SplSubject
+
+	final public function notify() : void
 	{
 		foreach ($this->observers as $observer) {
 			$observer->update($this);
 		}
-		return $this;
 	}
 }
 
-//Object Inheritance (Anonymous Class)
+//Import Subject Methods in your class
 $subject = new class implements SplSubject {
 	use Subject;
+
+	final public function observers()
+	{
+		return $this->observers;
+	}
 };
+//Import Observers Methods in your class
 $observer = new class implements SplObserver {
 	use Observer;
 };
@@ -61,14 +65,12 @@ $myObserver = new MyObserver;
 $mySubject->attach($observer);
 $mySubject->attach($myObserver);
 $mySubject->detach($myObserver);
-$mySubject->notify();
 
 //Fluency Interface
 $subject
-->attach($observer)
-->attach($myObserver)
-->detach($observer)
-->notify();
+	->attach($observer)
+	->attach($myObserver)
+	->detach($observer);
 
 //Notify All Observer
 $subject->notify();
