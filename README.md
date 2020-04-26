@@ -17,10 +17,10 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 | 	  **2**		| 		Singleton  	|		❌		|
 | 	  **3**		| 		Factory  	|		❌		|
 
-## How to Use
+# How to Use
 #### Link: Click [here](http://hallex.zapto.org/desgin-patterns-php/) to go documentation (coming soon)
 
-## Guide
+# Guide
 * [Install](#install)
 * [DesignPatterns](#design-patterns)
 	* [Observer](#observer)
@@ -28,13 +28,13 @@ Repository of Design Patterns for PHP (Recommended PHP 7.4)
 	* [Factory](#factory)
 
 [](#install)
-## Install
+# Install
 > **composer require hallex/design-patterns ^1.0**
 
 [](#design-patterns)
-## Design Patterns
+# Design Patterns
 [](#observer)
-#### Observer
+## Observer
 ```php
 <?php
 //Configure your autoload directory
@@ -112,11 +112,9 @@ $mySubject->notify();
 //Debug of Subjects
 var_dump($subject);
 var_dump($mySubject);
-
 ```
 
-[](#debug-observer)
-#### Debug:
+## Debug
 ```php
 //Debug Varible "$subject"
 object(class@anonymous)[3]
@@ -136,7 +134,62 @@ object(MySubject)[5]
           '000000002b33b19c0000000058b0c727' =>
             array (size=2)
 ```
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+[](#singleton)
+## Singleton
+```php
+<?php
+
+require_once __DIR__ . '/../../vendor/autoload.php';
+
+use DesignPatterns\Singleton\PDO\Singleton as PDOSingleton;
+use DesignPatterns\Singleton\Singleton as SingletonMethod;
+use DesignPatterns\Interfaces\Singleton\SingletonContract;
+use DesignPatterns\Interfaces\Singleton\PDO\SingletonContract as PDOSingletonContract;
+
+class Singleton implements SingletonContract
+{
+	use SingletonMethod;
+	/**
+	 * It possible make overwrite of method instance()
+	 * or property $instance
+	 */
+}
+
+class NotSingleton
+{
+}
+
+class Connection implements PDOSingletonContract
+{
+	use PDOSingleton;
+	public static function connect() : PDO
+	{
+		return new PDO(
+			'mysql:host=localhost;dbname=SOME_DATABASE',
+			'root',
+			''
+		);
+	}
+}
+```
+
+## Debug
+```php
+$singleton = new Singleton;//Fatal Error
+$singleton1 = Singleton::instance();//Single Instance
+$singleton2 = Singleton::instance();//Single Instance
+identicalObjects($singleton1, $singleton2);//true - It is a single intance
+
+$notSingleton1 = new NotSingleton;//new Instance
+$notSingleton2 = new NotSingleton;//new Instance
+identicalObjects($notSingleton1, $notSingleton2);//failed - It is not a single instance
+
+$connection = new Connection;//Fatal Error
+$connection1 = Connection::instance();//Single Instance
+$connection2 = Connection::instance();//Single Instance
+identicalObjects($connection1, $connection2);//true - It is a single instance of PDO
+```
 
 ## Contributor
 ```json

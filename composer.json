@@ -14,7 +14,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "DesignPatterns\\": "src/App/DesignPatterns/"
+            "DesignPatterns\\": "src/App/DesignPatterns/",
+            "DesignPatterns\\Interfaces\\": "src/App/Interfaces/"
         }
     },
     "autoload-dev": {

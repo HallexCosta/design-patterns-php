@@ -17,7 +17,7 @@ class ComposerStaticInite58efc08a2c50f0feb635a0a1f694b2a
     public static $prefixDirsPsr4 = array (
         'DesignPatterns\\Interfaces\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Interfaces',
+            0 => __DIR__ . '/../..' . '/src/App/Interfaces',
         ),
         'DesignPatterns\\' => 
         array (
@@ -26,9 +26,10 @@ class ComposerStaticInite58efc08a2c50f0feb635a0a1f694b2a
     );
 
     public static $classMap = array (
-        'DesignPatterns\\Interfaces\\DesignPatterns\\Observer\\ObserverContract' => __DIR__ . '/../..' . '/src/Interfaces/DesignPatterns/Observer/ObserverContract.php',
+        'DesignPatterns\\Interfaces\\Singleton\\SingletonContract' => __DIR__ . '/../..' . '/src/App/Interfaces/Singleton/SingletonContract.php',
         'DesignPatterns\\Observer\\Observer' => __DIR__ . '/../..' . '/src/App/DesignPatterns/Observer/Observer.php',
         'DesignPatterns\\Observer\\Subject' => __DIR__ . '/../..' . '/src/App/DesignPatterns/Observer/Subject.php',
+        'DesignPatterns\\Singleton\\Singleton' => __DIR__ . '/../..' . '/src/App/DesignPatterns/Singleton/Singleton.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
