@@ -191,15 +191,6 @@ $connection2 = Connection::instance();//Single Instance
 identicalObjects($connection1, $connection2);//true - It is a single instance of PDO
 ```
 
-## Contributor
-```json
-{
-	"name": "Hállex da Silva Costa",
-	"age": 17,
-	"role": "Developer",
-	"startDate": "18/03/2020"
-}
-```
-
-## Attention
-##### [Website Hallex](http://hallex.zapto.org/) it's Offline ❌
+# Author
+| [<img src="https://avatars2.githubusercontent.com/u/55293671?s=200&v=4"><br><sub>@HallexCosta</sub>](https://github.com/HallexCosta) |
+| :---: |
